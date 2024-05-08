@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2; 
+        padding: 20px;
+    }
+    
+    header {
+        background-color: #971717; 
+        padding: 20px;
+        text-align: center;
+        color: #ffffff; 
+    }
+    
+    .registration-form {
+        background-color: #ffffff; 
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        color: #971717; 
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="DATE"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        background-color:#971717; 
+        color: #ffffff; 
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.25); 
+        color: black;
+    }
+    .photo-gallery {
+        margin-top: 20px;
+    }
+    
+    .photo-gallery h2 {
+        color: #791010; 
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+    
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    #tp{
+           width: 100vm;
+           
+    }
+    a{
+        text-decoration: none;
+       font-size: 40px;
+       color: rgb(255, 255, 255);
+       text-shadow: 0 0 10px black;
+      
+    }
+    
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> counselling Service </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button style="background-color: transparent; left: 2em; position: absolute; "><a href="index.html">&#8592;</a></button>
+        <h1>counselling Services at Nemba Hospital</h1>
+    </header>
+    
+    <section class="service-info">
+        <h2>About Our Counseling Services</h2>
+        <p>Nemba Hospital offers professional counseling services to individuals and families facing a variety of emotional and mental health challenges. Our team of licensed counselors provides compassionate support and evidence-based therapies to help clients navigate difficult times and improve their overall well-being.</p>
+        <p>Our counseling services cover a wide range of issues, including anxiety, depression, trauma, relationship problems, and more. Whether you're struggling with personal issues, family conflicts, or life transitions, our counselors are here to listen, support, and guide you towards positive change.</p>
+        <p>At Nemba Hospital, we believe in the power of counseling to promote healing, growth, and resilience. We strive to create a safe and welcoming space where individuals can explore their thoughts and feelings, gain insight into their challenges, and develop coping strategies to overcome obstacles.</p>
+    </section>
+
+    <section class="photo-gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="couns 1.jpg" alt="counselling Service 1">
+            <img src="couns 3.jpg" alt="counselling Service 2">
+            <img src="couns 2.jpg" alt="counselling Service 3" >
+        </div>
+       
+    </section>
+    <img src="couns 4.jpg" alt="counselling Service 4"  width="100%"> 
+    <section class="registration-form">
+        <h2>counselling Registration form</h2>
+        <form action="submit_dental.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date" id="pn">date:</label>
+            <input type="date" id="date" name="date" max="10" required>
+
+          
+            
+
+            <label for="phone" id="pn">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" max="10" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+   
+
+    <footer>
+        <p>&copy; 2024 nemba. All rights reserved.</p>
+                  <p>Developed by Gibbor Web Design.</p>
+    </footer>
+</body>
+</html>

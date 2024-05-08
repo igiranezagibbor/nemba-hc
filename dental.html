@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2; 
+        padding: 20px;
+    }
+    
+    header {
+        background-color: #971717; 
+        padding: 20px;
+        text-align: center;
+        color: #ffffff; 
+    }
+    
+    .registration-form {
+        background-color: #ffffff; 
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        color: #971717; 
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        background-color:#971717; 
+        color: #ffffff; 
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.25); 
+        color: black;
+    }
+    a{
+        text-decoration: none;
+       font-size: 40px;
+       color: rgb(255, 255, 255);
+       text-shadow: 0 0 10px black;
+      
+    }
+    
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button style="background-color: transparent; left: 2em; position: absolute; "><a href="index.html">&#8592;</a></button>
+
+        <h1>Dental Services at Nemba Hospital</h1>
+    </header>
+    
+    <section class="service-info">
+        <h2>About Our Dental Services</h2>
+        <p>Nemba Hospital is proud to offer comprehensive dental services to our patients. Our team of experienced dentists and dental hygienists is dedicated to providing high-quality care in a comfortable and welcoming environment.</p>
+        <p>Whether you need a routine check-up, a cleaning, or more extensive dental work, we are here to help. From fillings and extractions to root canals and crowns, we offer a full range of dental treatments to meet your needs.</p>
+        <p>At Nemba Hospital, we understand that dental health is an integral part of overall health and well-being. That's why we prioritize preventive care and patient education, empowering our patients to maintain healthy smiles for life.</p>
+    </section>
+
+    <section class="photo-gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="dent1.jpg" alt="Dental Service 1">
+            <img src="dent2.jpg" alt="Dental Service 2">
+            
+        </div>
+        <img src="dent3.jpg" alt="vaccination Service 3" width="100%">
+    </section>
+
+    <section class="registration-form">
+        <h2>Dental Service Registration</h2>
+        <form action="submit_dental.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="Date">date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+   
+
+    <footer>
+        <p>&copy; 2024 nemba. All rights reserved.</p>
+    </footer>
+</body>
+</html>

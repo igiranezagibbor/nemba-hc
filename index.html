@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+ 
+
+</style>
+</head>
+<body>
+    <header>
+        <p id="th">Welcome to Nemba Hospital</p>
+        
+    </header>
+    <div class="container" style=" background-image: url(doct.jpg);background-size: 100vw ; background-position-x: -10px; background-position-y: px;" >
+        
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a  class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="dental.html">-Dental Service</a>
+                    <a href="maternity.html">-Maternity Service</a>
+                    <a href="vaccination.html">-Vaccination Service</a>
+                    <a href="HIV.html">-HIV Testing service  </a>
+                    <a href="counselling.html">-Counselling Service</a>
+                    <a href="Physiotherapy.html">-Physiotherapy Service</a>
+                    
+                </div>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="abt">
+                <a href="#footer" class="abt-n">Contact </a>
+                      <div class="content">
+                        
+ 
+                      </div>
+            </li>
+        </ul>
+    </nav> <div class="ads" id="ads">
+        <video src="Cholera.mp4" width="100%" height="100%" autoplay muted controls loop ></video>
+        
+    </div>
+    
+   
+    <section class="hero">
+        <h2>We Care for Your Health</h2>
+        <p>Quality healthcare services tailored to your needs.</p>
+        <a href="https://www.moh.gov.rw/" class="btn"><b>Learn More</b></a>
+    </section>
+   
+   
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer id="footer" class="footer" style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+
+    <div class="copy right">
+    <p>&copy; 2024 Nemba Hospital . All rights reserved.</p>
+    <p style="margin-right: 150px;"> developed by Gibbor</p>
+    </div>
+  
+
+    <div class="contact">
+        contact us: <br>
+        +250783375897 <br>
+        +250787483826  <br>
+        +250764374746  <br>
+    </div>
+    <div class="dev">
+        mail us: <br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-regular fa-envelope"></i> nembahc@gmail.com <BR>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i> NEMBA Hospital <BR>
+        <i class="fa-brands fa-x-twitter"></i>  NEMBA_HC <BR>
+        
+    
+    </div>
+</footer></div>
+</body>
+</html>
+<script>
+    ads = document.getElementById('ads')
+
+    setTimeout(come, 10000)
+    setTimeout(go,5000)
+
+    function come(){
+        ads.style.display = "block";
+    }
+
+    if(ads.style.display == "block"){
+        function go(){
+            ads.style.display= "none"
+        }
+    }
+    function close(){
+        ads.style.display= "none" 
+    }
+</script>
